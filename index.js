@@ -9,7 +9,7 @@ const{userRouter}=require("./routes/user.router")
 const {postRouter}=require("./routes/post.router")
 const multer = require("multer")
 const path = require("path")
-
+// middleware
 app.use("/images", express.static(path.join(__dirname, "public/images")));
 app.use(cors())
 app.use(express.json())
